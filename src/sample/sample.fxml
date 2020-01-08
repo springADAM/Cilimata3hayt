@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane fx:controller="sample.Controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="514.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="true" />
+      <Separator layoutX="447.0" orientation="VERTICAL" prefHeight="514.0" prefWidth="0.0" />
+      <VBox alignment="CENTER" layoutX="113.0" layoutY="108.0" prefHeight="335.0" prefWidth="250.0">
+         <children>
+            <JFXTextField fx:id="nom" layoutX="10.0" layoutY="10.0" promptText="   Nom">
+               <VBox.margin>
+                  <Insets bottom="25.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="prenom" layoutX="10.0" layoutY="80.0" promptText="   Prenom">
+               <VBox.margin>
+                  <Insets bottom="25.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="email" prefHeight="26.0" prefWidth="230.0" promptText="   Email ">
+               <VBox.margin>
+                  <Insets bottom="25.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="pwd" layoutX="10.0" layoutY="61.0" promptText="   Mot de passe">
+               <VBox.margin>
+                  <Insets bottom="25.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="pwdconfirm" layoutX="10.0" layoutY="112.0" promptText="   Mot de passe confirmation">
+               <VBox.margin>
+                  <Insets bottom="25.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXButton fx:id="signupbtn" prefHeight="38.0" prefWidth="166.0" text="Sign Up" onAction="#signup" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="550.0" layoutY="108.0" prefHeight="335.0" prefWidth="250.0">
+         <children>
+            <JFXTextField fx:id="logemail" prefHeight="26.0" prefWidth="230.0" promptText="   Email ">
+               <VBox.margin>
+                  <Insets bottom="25.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="logpwd" layoutX="10.0" layoutY="61.0" promptText="   Mot de passe">
+               <VBox.margin>
+                  <Insets bottom="25.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXButton onAction="#login" fx:id="loginbtn" prefHeight="38.0" prefWidth="166.0" text="LogIn" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+   </children>
+</AnchorPane>
